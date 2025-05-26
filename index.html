@@ -19,7 +19,7 @@
         <li><a href="#research">Research</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><button id="theme-toggle" aria-label="Toggle Theme">🌞</button></li>
+        <li><button id="theme-toggle" aria-label="Toggle Theme">🌙</button></li>
       </ul>
     </nav>
   </header>
@@ -60,7 +60,7 @@
   const toggle = document.getElementById('theme-toggle');
 
   function updateIcon() {
-    toggle.textContent = document.body.classList.contains('dark') ? '🌙' : '🌞';
+    toggle.textContent = document.body.classList.contains('dark') ? '🌞' : '🌙';
   }
 
   toggle.addEventListener('click', () => {
